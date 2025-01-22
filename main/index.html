@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>こんごうのホームページ</title>
+    
+    <!-- React と ReactDOM の読み込み -->
+    <script src="https://unpkg.com/react@17/umd/react.production.min.js&quot;&gt;&lt;/script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js&quot;&gt;&lt;/script>
+    
+    <!-- Babel の読み込み -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js&quot;&gt;&lt;/script>
+    
+    <!-- Tailwind CSS の読み込み -->
+    <script src="https://cdn.tailwindcss.com&quot;&gt;&lt;/script>
+    
+    <!-- Font Awesome の読み込み -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <!-- Inter フォントの読み込み -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="root"></div>
+    
+    <!-- あなたのReactコンポーネントファイル -->
+    <script type="text/babel" src="./MainComponent.js"></script>
+    
+    <!-- レンダリング用のスクリプト -->
+    <script type="text/babel">
+        ReactDOM.render(<MainComponent />, document.getElementById('root'));
+    </script>
+</body>
+</html>
